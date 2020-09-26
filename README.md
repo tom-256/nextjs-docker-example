@@ -34,7 +34,20 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 $docker build -t nextjs-docker-example .
 ```
 
+local
+```
+$docker build -f Dockerfile.local -t nextjs-docker-example:local .
+```
+
 ## docker run
 ```
-$docker run -p 3000:3000 nextjs-docker-example
+$DOCKER_BUILDKIT=1 docker run -p 3000:3000 nextjs-docker-example
+```
+
+local
+```
+$docker run -p 3000:3000 -v VOLUME:/app nextjs-docker-example:local
+```
+```
+$docker-compose up
 ```
