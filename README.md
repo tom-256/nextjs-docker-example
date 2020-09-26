@@ -46,8 +46,5 @@ $DOCKER_BUILDKIT=1 docker run -p 3000:3000 nextjs-docker-example
 
 local
 ```
-$docker run -p 3000:3000 -v VOLUME:/app nextjs-docker-example:local
-```
-```
 $docker-compose up
 ```
