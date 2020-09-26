@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -45,6 +45,10 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with ZEIT Now.
             </p>
           </a>
+        </div>
+        <div>
+          <p>process.env.NEXT_PUBLIC_ENV_VARIABLE</p>
+          <p> {process.env.NEXT_PUBLIC_ENV_VARIABLE}</p>
         </div>
       </main>
 
@@ -200,5 +204,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
