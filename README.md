@@ -36,12 +36,12 @@ $docker build -t nextjs-docker-example .
 
 local
 ```
-$docker build -f Dockerfile.local -t nextjs-docker-example:local .
+$DOCKER_BUILDKIT=1 docker build -f Dockerfile.local -t nextjs-docker-example:local .
 ```
 
 ## docker run
 ```
-$DOCKER_BUILDKIT=1 docker run -p 3000:3000 nextjs-docker-example
+$docker run -p 3000:3000 nextjs-docker-example
 ```
 
 local
