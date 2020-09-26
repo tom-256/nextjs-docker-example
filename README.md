@@ -48,3 +48,9 @@ local
 ```
 $docker-compose up
 ```
+
+## env
+overwrite default env example
+```
+$NEXT_PUBLIC_ENV_VARIABLE="test" npm run dev
+```
