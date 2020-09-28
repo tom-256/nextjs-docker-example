@@ -20,8 +20,8 @@ COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/node_modules ./node_modules
 
-RUN npx next telemetry disable 
+RUN npx next telemetry disable
 
 EXPOSE 3000
 USER node
-CMD "npm" "start"
+CMD "node_modules/.bin/next" "start"

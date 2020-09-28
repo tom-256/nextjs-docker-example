@@ -54,3 +54,8 @@ overwrite default env example
 ```
 $NEXT_PUBLIC_ENV_VARIABLE="test" npm run dev
 ```
+not defined in .env file
+```
+$export NEXT_PUBLIC_TEST=test
+$npm run dev
+```

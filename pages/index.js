@@ -47,8 +47,10 @@ export default function Home() {
           </a>
         </div>
         <div>
-          <p>process.env.NEXT_PUBLIC_ENV_VARIABLE</p>
+          <p> {process.env.NODE_ENV}</p>
           <p> {process.env.NEXT_PUBLIC_ENV_VARIABLE}</p>
+          <p> {process.env.ENV_SERVER_ONLY_VARIABLE}</p>
+          <p> {process.env.NEXT_PUBLIC_TEST}</p>
         </div>
       </main>
 
